@@ -11,10 +11,11 @@ import javax.security.auth.login.LoginException;
 public class Bot {
 
     public static JDABuilder builder;
-
+    public static String prefix;
 
     public static void main(String[] args) throws LoginException {
         String token = Config.get("TOKEN");
+        prefix = "s!";
         builder = JDABuilder.createDefault(token);
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
         builder.setBulkDeleteSplittingEnabled(false);
