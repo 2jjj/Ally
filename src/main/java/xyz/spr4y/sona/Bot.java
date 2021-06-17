@@ -20,7 +20,7 @@ public class Bot {
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
         builder.setBulkDeleteSplittingEnabled(false);
         builder.setCompression(Compression.NONE);
-        builder.setActivity(Activity.playing("Sona - s!help"));
+        builder.setActivity(Activity.playing("s!help"));
         //builder.enableCache(GatewayIntent.GUILD_MEMBERS);
 
         builder.build();
