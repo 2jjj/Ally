@@ -16,13 +16,9 @@ public class Bot {
     public static void main(String[] args) throws LoginException {
         String token = Config.get("TOKEN");
         builder = JDABuilder.createDefault(token);
-
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
-
         builder.setBulkDeleteSplittingEnabled(false);
-
         builder.setCompression(Compression.NONE);
-
         builder.setActivity(Activity.playing("Sona - s!help"));
         //builder.enableCache(GatewayIntent.GUILD_MEMBERS);
 
