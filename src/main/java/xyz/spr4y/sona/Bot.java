@@ -23,7 +23,7 @@ public class Bot {
 
         builder.setCompression(Compression.NONE);
 
-        builder.setActivity(Activity.playing("Olá Java."));
+        builder.setActivity(Activity.playing("Sona - s!help"));
         //builder.enableCache(GatewayIntent.GUILD_MEMBERS);
 
         builder.build();
