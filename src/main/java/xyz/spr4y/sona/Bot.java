@@ -37,6 +37,6 @@ public class Bot {
     public static void main(String[] args) throws LoginException {
         long enable = System.currentTimeMillis();
         new Bot();
-        System.out.println("[LOGS]" + (System.currentTimeMillis() - enable) + "ms.");
+        System.out.println("[LOGS] O bot foi iniciado em " + (System.currentTimeMillis() - enable) + "ms!");
     }
 }
