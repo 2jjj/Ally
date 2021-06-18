@@ -5,6 +5,7 @@ import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
+import xyz.spr4y.sona.commands.BotinfoCommand;
 import xyz.spr4y.sona.commands.HelpCommand;
 import xyz.spr4y.sona.commands.PingCommand;
 
@@ -27,6 +28,7 @@ public class Bot {
         CommandClient client = builder.build();
         client.addCommand(new PingCommand());
         client.addCommand(new HelpCommand());
+        client.addCommand(new BotinfoCommand());
 
         jda.addEventListener(client);
 
