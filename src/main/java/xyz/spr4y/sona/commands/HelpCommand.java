@@ -3,6 +3,7 @@ package xyz.spr4y.sona.commands;
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.Guild;
 
 import java.awt.Color;
 
@@ -22,10 +23,10 @@ public class HelpCommand extends Command {
         eb.setDescription("Meus comandos");
         eb.addField("field", "field", false);
         eb.addBlankField(false);
-        eb.setAuthor("Sona", null, "http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
-        eb.setFooter("Comando de ajuda.", "http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
+        //eb.setAuthor("SONA", null, "http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
+        eb.setFooter("Comando de ajuda", "https://cdn.discordapp.com/embed/avatars/3.png?size=2048");
         eb.setImage("http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
-        eb.setThumbnail("http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
+        //eb.setThumbnail("http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
 
         event.reply(eb.build());
     }
