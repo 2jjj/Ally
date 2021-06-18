@@ -18,7 +18,7 @@ public class BotinfoCommand extends Command {
         eb.setColor(Color.red);
         eb.setColor(new Color(0xF40C0C));
         eb.setColor(new Color(255, 0, 54));
-        eb.setDescription("Me chamo Sona e fui criado pelo Spray#0007 em **JDA** com a linguagem **Java**, espero que goste de mim!\n\n**Algumas informações:**\N\n<:early_developer_badge:854716150076538901> **| Developer: Spray#0007**");
+        eb.setDescription("Me chamo Sona e fui criado pelo Spray#0007 em **JDA** com a linguagem **Java**, espero que goste de mim!\n\n**Algumas informações:**\n\n<:early_developer_badge:854716150076538901> **| Developer: Spray#0007**");
         eb.setAuthor("Minhas informações!", null, event.getAuthor().getAvatarUrl());
         eb.setFooter("Requisitado por " + event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator(), event.getAuthor().getAvatarUrl());
         eb.setThumbnail(event.getAuthor().getAvatarUrl());
