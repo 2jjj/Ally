@@ -15,6 +15,13 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.jagrosh</groupId>
+            <artifactId>jda-utilities</artifactId>
+            <version>3.0.2</version>
+            <scope>compile</scope>
+            <type>pom</type>
+        </dependency>
+        <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
             <version>4.2.0_168</version>

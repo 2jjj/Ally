@@ -1,35 +1,39 @@
 package xyz.spr4y.sona;
 
+import com.jagrosh.jdautilities.command.CommandClient;
+import com.jagrosh.jdautilities.command.CommandClientBuilder;
+import net.dv8tion.jda.api.AccountType;
+import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.requests.GatewayIntent;
-import net.dv8tion.jda.api.utils.Compression;
-import net.dv8tion.jda.api.utils.cache.CacheFlag;
-import xyz.spr4y.sona.listeners.test;
+import xyz.spr4y.sona.commands.PingCommand;
 
 import javax.security.auth.login.LoginException;
 
+
 public class Bot {
 
-    public static JDABuilder builder;
-    public static String prefix;
+    String token = Config.get("TOKEN");
+
+    private Bot() throws LoginException {
+        JDA jda = JDABuilder.createDefault(token).build();
+
+        CommandClientBuilder builder = new CommandClientBuilder();
+        builder.setPrefix("s!");
+        builder.setOwnerId("836345581424738354");
+        builder.setHelpWord("help");
+        builder.setActivity(Activity.watching("s!help"));
+
+        CommandClient client = builder.build();
+        client.addCommand(new PingCommand());
+
+        
+        jda.addEventListener(client);
+    }
 
     public static void main(String[] args) throws LoginException {
-        String token = Config.get("TOKEN");
-        prefix = "s!";
-        builder = JDABuilder.createDefault(token);
-        builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
-        builder.setBulkDeleteSplittingEnabled(false);
-        builder.setCompression(Compression.NONE);
-        builder.setActivity(Activity.playing("Sona - s!help"));
-        //builder.enableCache(GatewayIntent.GUILD_MEMBERS);
-        registerListeners();
-
-        builder.build();
+        long enable = System.currentTimeMillis();
+        new Bot();
+        System.out.println("[LOGS]" + (System.currentTimeMillis() - enable) + "ms.");
     }
-    public static void registerListeners() {
-        builder.addEventListeners(new test());
-    }
-
 }
-
