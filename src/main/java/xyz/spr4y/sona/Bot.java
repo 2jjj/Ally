@@ -22,7 +22,7 @@ public class Bot {
         CommandClientBuilder builder = new CommandClientBuilder();
         builder.setPrefix("s!");
         builder.setOwnerId("836345581424738354");
-        builder.setHelpWord("help");
+        //builder.setHelpWord("help");
         builder.setActivity(Activity.watching("s!help"));
 
         CommandClient client = builder.build();

@@ -12,7 +12,7 @@ public class HelpCommand extends Command {
     EmbedBuilder eb = new EmbedBuilder();
 
     public HelpCommand() {
-        super.name = "ajuda";
+        super.name = "help";
     }
     @Override
     protected void execute(CommandEvent event) {
