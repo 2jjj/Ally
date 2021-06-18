@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
+import xyz.spr4y.sona.commands.HelpCommand;
 import xyz.spr4y.sona.commands.PingCommand;
 
 import javax.security.auth.login.LoginException;
@@ -26,9 +27,11 @@ public class Bot {
 
         CommandClient client = builder.build();
         client.addCommand(new PingCommand());
+        client.addCommand(new HelpCommand());
 
 
         jda.addEventListener(client);
+
     }
 
     public static void main(String[] args) throws LoginException {
