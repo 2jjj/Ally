@@ -27,7 +27,7 @@ public class Bot {
         CommandClient client = builder.build();
         client.addCommand(new PingCommand());
 
-        
+
         jda.addEventListener(client);
     }
 
