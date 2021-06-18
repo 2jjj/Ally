@@ -12,16 +12,16 @@ public class HelpCommand extends Command {
     EmbedBuilder eb = new EmbedBuilder();
 
     public HelpCommand() {
-        super.name = "help";
+        super.name = "ajuda";
     }
     @Override
     protected void execute(CommandEvent event) {
-        eb.setTitle("Sona - Help", null);
+        eb.setTitle("Precisa de ajuda?\nAqui embaixo estão meus comandos!\n", null);
         eb.setColor(Color.red);
         eb.setColor(new Color(0xF40C0C));
         eb.setColor(new Color(255, 0, 54));
-        eb.setDescription("Meus comandos");
-        eb.addField("field", "field", false);
+        eb.setDescription("s!ping\ns!help");
+        //eb.addField("field", "field", false);
         eb.addBlankField(false);
         //eb.setAuthor("SONA", null, "http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
         eb.setFooter("Comando de ajuda", "https://cdn.discordapp.com/embed/avatars/3.png?size=2048");
