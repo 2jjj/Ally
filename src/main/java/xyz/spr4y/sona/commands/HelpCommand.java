@@ -26,7 +26,7 @@ public class HelpCommand extends Command {
         //eb.setAuthor("SONA", null, "http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
         eb.setFooter("Comando de ajuda", "https://cdn.discordapp.com/embed/avatars/3.png?size=2048");
         eb.setImage("http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
-        //eb.setThumbnail("http://www.fapcom.edu.br/wp-content/uploads/2017/04/estudando.gif");
+        //eb.setThumbnail("IMG-LINK");
 
         event.reply(eb.build());
     }
