@@ -1,1 +1,1 @@
-# Sona
+## Sona - Discord bot.
