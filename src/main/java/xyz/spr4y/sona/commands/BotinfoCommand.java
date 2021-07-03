@@ -13,6 +13,7 @@ public class BotinfoCommand extends Command {
     public BotinfoCommand() {
         super.name = "botinfo";
     }
+
     @Override
     protected void execute(CommandEvent event) {
         eb.setColor(Color.red);
