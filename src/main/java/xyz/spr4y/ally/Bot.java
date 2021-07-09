@@ -18,7 +18,7 @@ public class Bot {
     String token = Config.get("TOKEN");
 
     private Bot() throws LoginException {
-        
+
         JDA jda = JDABuilder.createDefault(token).build();
 
         CommandClientBuilder builder = new CommandClientBuilder();
