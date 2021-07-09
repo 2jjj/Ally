@@ -8,6 +8,7 @@ import net.dv8tion.jda.api.entities.Activity;
 import xyz.spr4y.sona.commands.BotinfoCommand;
 import xyz.spr4y.sona.commands.HelpCommand;
 import xyz.spr4y.sona.commands.PingCommand;
+import xyz.spr4y.sona.commands.ServerInfoCommand;
 
 import javax.security.auth.login.LoginException;
 
@@ -20,15 +21,15 @@ public class Bot {
         JDA jda = JDABuilder.createDefault(token).build();
 
         CommandClientBuilder builder = new CommandClientBuilder();
-        builder.setPrefix("s!");
+        builder.setPrefix("a!");
         builder.setOwnerId("836345581424738354");
-        //builder.setHelpWord("help");
-        builder.setActivity(Activity.watching("s!help"));
+        builder.setActivity(Activity.watching("Feito pelo Spray!"));
 
         CommandClient client = builder.build();
         client.addCommand(new PingCommand());
         client.addCommand(new HelpCommand());
         client.addCommand(new BotinfoCommand());
+        client.addCommand(new ServerInfoCommand());
 
         jda.addEventListener(client);
 
