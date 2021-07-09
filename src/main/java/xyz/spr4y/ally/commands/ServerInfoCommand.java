@@ -44,7 +44,7 @@ public class ServerInfoCommand extends Command {
             }
         }
         embed.addField("Cargos", sb.toString(), true);
-        embed.setFooter("Serverinfo - Sona", null);
+        embed.setFooter("Serverinfo - Ally", null);
         event.reply(embed.build());
     }
 }
