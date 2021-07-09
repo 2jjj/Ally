@@ -11,4 +11,4 @@
 [Entre no meu servidor de suporte!](https://discord.gg/GRhdTpsTGE)
 
 ## 😄 Me adicione!
-[Clique aqui!](https://ally.spr4y.xyz)
+[Clique aqui!](https://discord.com/api/oauth2/authorize?client_id=862137049447792682&permissions=8&scope=bot)
