@@ -17,13 +17,14 @@ public class Bot {
     private Bot() throws LoginException {
 
         JDA jda = JDABuilder.createDefault(token).build();
-
         CommandClientBuilder builder = new CommandClientBuilder();
+
         builder.setPrefix("a!");
         builder.setOwnerId("836345581424738354");
-        builder.setActivity(Activity.watching("Feito pelo Spray!"));
+        builder.setActivity(Activity.listening("a!ajuda"));
 
         CommandClient client = builder.build();
+        //Registrando comandos
         client.addCommand(new PingCommand());
         client.addCommand(new HelpCommand());
         client.addCommand(new BotinfoCommand());
