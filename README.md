@@ -1,11 +1,14 @@
-<h1>Sona™</h1>
+<h1>Ally™</h1>
 
 ---
 
 ## Algumas das funções:
-- test
+- Manipulação de textos
+- Comandos de informação
+- Comandos de diversão
 
-## ℹ️ Precisa de ajuda?
+## ⁉️️ Precisa de ajuda?
 [Entre no meu servidor de suporte!](https://discord.gg/GRhdTpsTGE)
+
 ## 😄 Me adicione!
-[Clique aqui!](https://spr4y.xyz)
+[Clique aqui!](https://ally.spr4y.xyz)
