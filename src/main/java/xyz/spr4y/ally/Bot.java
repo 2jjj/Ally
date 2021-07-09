@@ -1,14 +1,14 @@
-package xyz.spr4y.sona;
+package xyz.spr4y.ally;
 
 import com.jagrosh.jdautilities.command.CommandClient;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
-import xyz.spr4y.sona.commands.BotinfoCommand;
-import xyz.spr4y.sona.commands.HelpCommand;
-import xyz.spr4y.sona.commands.PingCommand;
-import xyz.spr4y.sona.commands.ServerInfoCommand;
+import xyz.spr4y.ally.commands.BotinfoCommand;
+import xyz.spr4y.ally.commands.HelpCommand;
+import xyz.spr4y.ally.commands.PingCommand;
+import xyz.spr4y.ally.commands.ServerInfoCommand;
 
 import javax.security.auth.login.LoginException;
 

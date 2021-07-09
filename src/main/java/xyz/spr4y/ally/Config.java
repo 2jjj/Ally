@@ -1,4 +1,4 @@
-package xyz.spr4y.sona;
+package xyz.spr4y.ally;
 
 import io.github.cdimascio.dotenv.Dotenv;
 

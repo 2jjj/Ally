@@ -1,4 +1,4 @@
-package xyz.spr4y.sona.commands;
+package xyz.spr4y.ally.commands;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
@@ -6,7 +6,6 @@ import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Role;
 
-import java.awt.Color;
 import java.util.stream.Collectors;
 
 public class ServerInfoCommand extends Command {
