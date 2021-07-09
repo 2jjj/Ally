@@ -18,6 +18,7 @@ public class Bot {
     String token = Config.get("TOKEN");
 
     private Bot() throws LoginException {
+        
         JDA jda = JDABuilder.createDefault(token).build();
 
         CommandClientBuilder builder = new CommandClientBuilder();
@@ -32,7 +33,6 @@ public class Bot {
         client.addCommand(new ServerInfoCommand());
 
         jda.addEventListener(client);
-
     }
 
     public static void main(String[] args) throws LoginException {
