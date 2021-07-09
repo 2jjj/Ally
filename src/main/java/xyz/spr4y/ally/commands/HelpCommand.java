@@ -16,16 +16,14 @@ public class HelpCommand extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
-        eb.setTitle("Precisa de ajuda?\nAqui embaixo estão meus comandos!\n", null);
         eb.setColor(Color.red);
         eb.setColor(new Color(0xF40C0C));
         eb.setColor(new Color(255, 0, 54));
-        eb.setDescription("**s!ping\ns!help\ns!botinfo**");
-        eb.setAuthor("Sona - ajuda", null, event.getAuthor().getAvatarUrl());
+        eb.setDescription("Meus comandos:\n\n `s!ping\ns!help\ns!botinfo`");
+        eb.setAuthor("Ally - ajuda", null, event.getAuthor().getAvatarUrl());
         eb.setFooter("Requisitado por " + event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator(), event.getAuthor().getAvatarUrl());
-        eb.setImage("https://wi.wallpapertip.com/wsimgs/10-105111_darling-in-the-franxx-zero-two.jpg");
+        //eb.setImage("https://wi.wallpapertip.com/wsimgs/10-105111_darling-in-the-franxx-zero-two.jpg");
         //eb.setThumbnail("IMG-LINK");
-
         event.reply(eb.build());
     }
 }
