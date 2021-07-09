@@ -18,6 +18,7 @@ public class ServerInfoCommand extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
+
         EmbedBuilder embed = new EmbedBuilder();
 
         embed.setThumbnail(event.getGuild().getIconUrl());

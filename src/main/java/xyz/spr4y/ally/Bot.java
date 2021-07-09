@@ -5,10 +5,7 @@ import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
-import xyz.spr4y.ally.commands.BotinfoCommand;
-import xyz.spr4y.ally.commands.HelpCommand;
-import xyz.spr4y.ally.commands.PingCommand;
-import xyz.spr4y.ally.commands.ServerInfoCommand;
+import xyz.spr4y.ally.commands.*;
 
 import javax.security.auth.login.LoginException;
 
@@ -31,6 +28,7 @@ public class Bot {
         client.addCommand(new HelpCommand());
         client.addCommand(new BotinfoCommand());
         client.addCommand(new ServerInfoCommand());
+        client.addCommand(new QualidadeCommand());
 
         jda.addEventListener(client);
     }
