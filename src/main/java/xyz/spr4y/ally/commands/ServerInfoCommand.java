@@ -45,7 +45,7 @@ public class ServerInfoCommand extends Command {
             }
         }
         embed.addField("Cargos", sb.toString(), true);
-        embed.setFooter("Serverinfo - Ally", null);
+        embed.setFooter("Serverinfo", null);
         event.reply(embed.build());
     }
 }
