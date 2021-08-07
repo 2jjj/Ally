@@ -20,8 +20,6 @@ public class HelpCommand extends Command {
         eb.setDescription("Meus comandos:\n\n `s!ping\ns!help\ns!botinfo`");
         eb.setAuthor("Ally - ajuda", null, event.getAuthor().getAvatarUrl());
         eb.setFooter("Requisitado por " + event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator(), event.getAuthor().getAvatarUrl());
-        //eb.setImage("https://wi.wallpapertip.com/wsimgs/10-105111_darling-in-the-franxx-zero-two.jpg");
-        //eb.setThumbnail("IMG-LINK");
         event.reply(eb.build());
     }
 }
