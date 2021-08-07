@@ -18,7 +18,7 @@ public class HelpCommand extends Command {
     protected void execute(CommandEvent event) {
         eb.setColor(new Color(19, 220, 175));
         eb.setDescription("Meus comandos:\n\n `s!ping\ns!help\ns!botinfo`");
-        eb.setAuthor("Ally - ajuda", null, event.getAuthor().getAvatarUrl());
+        eb.setAuthor("Ajuda", null, event.getAuthor().getAvatarUrl());
         eb.setFooter("Requisitado por " + event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator(), event.getAuthor().getAvatarUrl());
         event.reply(eb.build());
     }
