@@ -17,7 +17,7 @@ public class HelpCommand extends Command {
     @Override
     protected void execute(CommandEvent event) {
         eb.setColor(new Color(19, 220, 175));
-        eb.setDescription("Meus comandos:\n\n `a!ping\na!help\na!botinfo`");
+        eb.setDescription("Meus comandos:\n `a!ping\na!help\na!botinfo`");
         eb.setAuthor("Ajuda", null, event.getAuthor().getAvatarUrl());
         eb.setFooter("Requisitado por " + event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator(), event.getAuthor().getAvatarUrl());
         event.reply(eb.build());
