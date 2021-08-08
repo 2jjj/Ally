@@ -21,7 +21,7 @@ public class Bot {
 
         builder.setPrefix("a!");
         builder.setOwnerId("836345581424738354");
-        builder.setActivity(Activity.listening("a!ajuda"));
+        builder.setActivity(Activity.listening("Online"));
 
         CommandClient client = builder.build();
         //Registrando comandos
