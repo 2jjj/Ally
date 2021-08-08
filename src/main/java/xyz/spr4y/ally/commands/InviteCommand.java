@@ -13,7 +13,7 @@ public class InviteCommand extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
-        event.reply("Olá eu sou a **"+event.getJDA().getSelfUser().getName()+"**, uma simples bot para o discord!");
+        event.reply("Olá eu sou a **"+event.getJDA().getSelfUser().getName()+"**, uma simples bot para o discord!\nMe convide: https://ally.spr4y.xyz");
     }
 }
 
