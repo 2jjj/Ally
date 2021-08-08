@@ -30,6 +30,7 @@ public class Bot {
         client.addCommand(new BotinfoCommand());
         client.addCommand(new ServerInfoCommand());
         client.addCommand(new QualidadeCommand());
+        client.addCommand(new InviteCommand());
 
         jda.addEventListener(client);
     }

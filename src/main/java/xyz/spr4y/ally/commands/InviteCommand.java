@@ -8,7 +8,7 @@ import java.awt.*;
 public class InviteCommand extends Command {
 
     public InviteCommand() {
-        super.name = "ajuda";
+        super.name = "invite";
     }
 
     @Override
