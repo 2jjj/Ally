@@ -1,4 +1,4 @@
-package xyz.spr4y.ally.commands;
+package xyz.spr4y.ally.commands.fun;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;

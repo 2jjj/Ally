@@ -1,4 +1,4 @@
-package xyz.spr4y.ally.commands;
+package xyz.spr4y.ally.commands.info;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
@@ -17,7 +17,7 @@ public class BotinfoCommand extends Command {
     @Override
     protected void execute(CommandEvent event) {
         eb.setColor(Color.red);
-        eb.setColor(new Color(0xF40C0C));
+        eb.setColor(new Color(0xE26F6F));
         eb.setColor(new Color(255, 0, 54));
         eb.setDescription("Me chamo Ally e fui criada pelo Spray#7725 em **Java(JDA)**, espero que goste de mim!\n\n**Algumas informações:**\n<:early_developer_badge:854716150076538901> **| Developer: Spray#0007**");
         eb.setAuthor("Minhas informações!", null, event.getAuthor().getAvatarUrl());

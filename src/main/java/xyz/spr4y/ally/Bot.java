@@ -5,7 +5,8 @@ import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
-import xyz.spr4y.ally.commands.*;
+import xyz.spr4y.ally.commands.fun.QualidadeCommand;
+import xyz.spr4y.ally.commands.info.*;
 
 import javax.security.auth.login.LoginException;
 
