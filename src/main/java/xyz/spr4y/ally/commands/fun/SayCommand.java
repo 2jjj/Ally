@@ -12,7 +12,7 @@ public class SayCommand extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
-      if(event.getArgs().length() >= 0) {
+      if(event.getArgs().length() >= 1) {
           event.reply(event.getArgs() + "\n\n- " + event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator());
           System.out.println(event.getArgs());
       }

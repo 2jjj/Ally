@@ -12,6 +12,9 @@ public class QualidadeCommand extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
+
+        if
+
         if (event.getArgs().length() >= 1) {
             String qualidade = VaporwaveUtils.vaporwave(String.join(" ", event.getArgs()));
 
