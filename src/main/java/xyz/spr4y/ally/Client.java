@@ -12,11 +12,11 @@ import xyz.spr4y.ally.commands.info.*;
 import javax.security.auth.login.LoginException;
 
 
-public class Bot {
+public class Client {
 
     String token = Config.get("TOKEN");
 
-    private Bot() throws LoginException {
+    private Client() throws LoginException {
 
         JDA jda = JDABuilder.createDefault(token).build();
         CommandClientBuilder builder = new CommandClientBuilder();
@@ -40,7 +40,7 @@ public class Bot {
 
     public static void main(String[] args) throws LoginException {
         long enable = System.currentTimeMillis();
-        new Bot();
-        System.out.println("[LOGS] O bot foi iniciado em " + (System.currentTimeMillis() - enable) + "ms!");
+        new Client();
+        System.out.println("O bot foi iniciado em " + (System.currentTimeMillis() - enable) + "ms!");
     }
 }
